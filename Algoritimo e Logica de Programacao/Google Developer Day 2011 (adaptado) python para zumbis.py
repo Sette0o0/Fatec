@@ -131,3 +131,40 @@ for sakura in txtA:
             pVerbB += 1
 
 print(f"Texto B tem {verbsB} verbos, em primeira pessoa são {pVerbB}")
+
+nomes = '''ana heloisa julia maria marianne
+paula rebeca vivian'''.split()
+
+ordem = "zmbtshjpnwlrcxkqvdgf"
+troca = "ABCDEFGHIJKLMNOPQRST"
+
+def nova(texto):
+    traducao = ''
+    for palavra in texto:
+        resp = ''
+        for letra in palavra:
+            resp = troca[ordem.index(letra)]
+            traducao += resp
+        traducao += ' '
+    traducao = traducao.strip()
+    traducao = traducao.split()
+    traducao.sort()
+    return traducao
+
+def disTraduzir(texto):
+    disTrad = ''
+    for palavra in texto:
+        resp = ''
+        for letra in palavra:
+            resp = ordem[troca.index(letra)]
+            disTrad += resp
+        disTrad += ' '
+    disTrad = disTrad.strip()
+    disTrad = disTrad.split()
+    return disTrad
+
+textoOredenadoTraduzido = nova(txtA)
+print(textoOredenadoTraduzido)
+
+original = disTraduzir(textoOredenadoTraduzido)
+print(original)
