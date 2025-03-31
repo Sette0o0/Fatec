@@ -1,0 +1,45 @@
+body{
+    background: url("imagens/background-texture.jpg");
+}
+nav{
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: spa;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+    color: #222222;
+}
+nav a{
+    padding: 0 10px;
+}
+.navbar{
+    background-color: #b2b2b2;
+    color: #fff;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+article{
+    max-width: 80%;
+}
+footer{
+    margin-top: 30px;
+    background-color: #b2b2b2;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
