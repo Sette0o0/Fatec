@@ -6,6 +6,20 @@
     <title>Unes - Contatos</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        section{
+            padding: 20px;
+            margin: 20px 10%;
+            display: flex;
+            flex-direction: column;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -21,13 +35,26 @@
 
     <main>
         <section>
-            
-        </section>
-
-        <section>
+            <header>
+                <h1>Entre em contato</h1>
+            </header>
             <article>
-                
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aliquam ea dolorum sint, nulla quod beatae accusamus ex mollitia esse. Nulla aspernatur, eius est beatae fugiat reprehenderit assumenda distinctio vitae?
             </article>
+            <article>
+                <h2>Formulário de contato</h2>
+                <form action="#" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
         </section>
     </main>
 
