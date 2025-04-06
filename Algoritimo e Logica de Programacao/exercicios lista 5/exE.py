@@ -63,7 +63,6 @@ for numeros in telefones:
 
 # print(newphones)
 
-
 newphones2 = []
 for numeros in newphones:
     if sumEven(numeros):
