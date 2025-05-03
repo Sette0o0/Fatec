@@ -73,8 +73,8 @@ def sum2(nums):
 # middle_way([5, 2, 9], [1, 4, 5]) -> [2, 4]
 def middle_way(a, b):
     lista = []
-    meioa = (len(a) / 2).__ceil__() - 1
-    meiob = (len(b) / 2).__ceil__() - 1
+    meioa = int(len(a) / 2)
+    meiob = int(len(b) / 2)
     lista.append(a[meioa])
     lista.append(b[meiob])
     return lista
@@ -95,7 +95,11 @@ def middle_way(a, b):
 # date_fashion(5, 5) -> 1
 def date_fashion(eu, par):
     resposta = 0
-    
+
+    if eu <= 2 or par <= 2: resposta = 0
+    elif eu >= 8 or par >= 8: resposta = 2
+    else: resposta = 1
+
     return resposta
 
 # H. squirrel_play
@@ -107,7 +111,12 @@ def date_fashion(eu, par):
 # squirrel_play(95, False) -> False
 # squirrel_play(95, True) -> True
 def squirrel_play(temp, is_summer):
-    return
+    brincando = False
+
+    if (is_summer and 60 <= temp <= 100) or (not is_summer and 60 <= temp <= 90):
+        brincando = True
+
+    return brincando
 
 # I. pego_correndo
 # você foi pego correndo
@@ -123,7 +132,18 @@ def squirrel_play(temp, is_summer):
 # pego_correndo(65, False) -> 1
 # pego_correndo(65, True) -> 0 
 def pego_correndo(speed, is_birthday):
-    return
+    multa = 0
+
+    media = 61
+    grave = 81
+    if is_birthday:
+        media += 5
+        grave += 5
+
+    if speed >= grave: multa = 2
+    elif speed >= media: multa = 1
+
+    return multa
 
 # J. alarm_clock #
 # day: 0=domingo, 1=segunda, 2=terça, ..., 6=sábado
@@ -138,7 +158,19 @@ def pego_correndo(speed, is_birthday):
 # alarm_clock(5, False) -> '7:00'
 # alarm_clock(0, False) -> '10:00'
 def alarm_clock(day, vacation):
-    return
+    fds = [0, 6]
+
+    if day not in fds:
+        if vacation:
+            alarme = '10:00'
+        else:
+            alarme = '7:00'
+
+    if day in fds:
+        if vacation: alarme = 'off'
+        else: alarme = '10:00'
+
+    return alarme
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
