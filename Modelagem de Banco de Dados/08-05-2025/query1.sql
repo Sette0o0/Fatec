@@ -41,7 +41,7 @@ from pedido p
 inner join cliente c on c.cli_codigo = p.cli_codigo
 inner join vendedor v on v.ven_codigo = p.ven_codigo;
 
-select pro.pro_codigo, pro.prod_descricao, v.ven_codigo, v.ven_nome, ped.ped_numero
+select pro.pro_codigo, pro.prod_descricao, v.ven_codigo, v.ven_nome, ped.ped_numero, ped.ped_data, cli.cli_nome
 from pedido ped
 inner join vendedor v on ped.ven_codigo = v.ven_codigo 
 inner join item_pedido ip on ped.ped_numero = ip.ped_numero
