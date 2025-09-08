@@ -1,0 +1,20 @@
+{
+  "name": "modulo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sette0o0/RI4.git#main"
+  },
+  "author": "Sette0_0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sette0o0/RI4/issues"
+  },
+  "homepage": "https://github.com/Sette0o0/RI4/tree/main#readme"
+}
