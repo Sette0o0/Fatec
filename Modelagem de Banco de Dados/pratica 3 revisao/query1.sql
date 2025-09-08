@@ -14,6 +14,7 @@ create table consulta(
     data date not null,
     hora time not null,
     cpf varchar(11) references paciente(cpf)
+    
 );
 create table convenio(
 	cod_convenio int primary key,
