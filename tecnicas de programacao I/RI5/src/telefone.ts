@@ -1,8 +1,8 @@
 export default class Telefone{
-    public ddd: number
-    public numero: number
+    public ddd: string
+    public numero: string
 
-    constructor(ddd: number, numero: number){
+    constructor(ddd: string, numero: string){
         this.ddd = ddd
         this.numero = numero
     }

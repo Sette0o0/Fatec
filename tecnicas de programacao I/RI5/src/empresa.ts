@@ -8,14 +8,14 @@ export default class Empresa{
     public cnpj: string
     public endereco: Endereco
     public telefone: Telefone[]
-    public funcionario: Funcionario[]
+    public funcionarios: Funcionario[]
 
-    constructor(razaoSocial: string, nomeFantasia: string, cnpj: string, endereco: Endereco, telefone: Telefone[], funcionario: Funcionario[]){
+    constructor(razaoSocial: string, nomeFantasia: string, cnpj: string, endereco: Endereco, telefone: Telefone[], funcionarios: Funcionario[]){
         this.razaoSocial = razaoSocial
         this.nomeFantasia = nomeFantasia
         this.cnpj = cnpj
         this.endereco = endereco
         this.telefone = telefone
-        this.funcionario = funcionario
+        this.funcionarios = funcionarios
     }
 }
