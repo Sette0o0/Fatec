@@ -1,0 +1,11 @@
+{
+  "name": "ri5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.ts",
+  "scripts": {
+    "dev": "tsc && out/script.js"
+  },
+  "author": "Sette0_0",
+  "license": "ISC"
+}
