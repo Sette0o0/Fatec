@@ -2,12 +2,19 @@ function pegarValor() {
     let data = document.getElementById('data').value.split('/');
 
     let dia = data[0];
+
+
     let mes = data[1];
     if(mes[0] == '0'){
         mes = data[1][1];
     }
     else{
         mes = data[1];
+    }
+
+    if (dia > 31){
+        alert("Dia errado")
+        return 
     }
 
     let ano = data[2];

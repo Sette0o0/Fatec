@@ -1,0 +1,17 @@
+{
+  "name": "ri6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "dev": "tsc && node out/main.js"
+  },
+  "author": "Sette0_0",
+  "license": "ISC",
+  "dependencies": {
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2"
+  }
+}

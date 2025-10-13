@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.ts",
   "scripts": {
-    "dev": "tsc && out/script.js"
+    "dev": "tsc && node out/script.js"
   },
   "author": "Sette0_0",
   "license": "ISC"

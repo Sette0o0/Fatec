@@ -11,6 +11,7 @@ else if (operacao === 'subtração') {
     resultado = num1 - num2;
 }
 else if (operacao === 'multiplicação') {
+    
     resultado = num1 * num2;
 }
 else if (operacao === 'divisão') {
