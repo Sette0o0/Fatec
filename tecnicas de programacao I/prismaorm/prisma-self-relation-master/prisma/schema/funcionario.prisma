@@ -1,0 +1,12 @@
+model Funcionario {
+  id   Int    @id @default(autoincrement())
+  nome String
+
+  cargo Cargo
+
+  supervisorId Int?
+  supervisor   Funcionario? @relation(name: "Supervisor", fields: [supervisorId], references: [id])
+
+  subordinados Funcionario[] @relation(name: "Supervisor")
+}
+

@@ -1,0 +1,12 @@
+model Usuario {
+  id   Int    @id @default(autoincrement())
+  nome String
+
+  tipo Tipo
+
+  mentorId Int?     @unique
+  mentor   Usuario? @relation(name: "Mentor", fields: [mentorId], references: [id])
+  // mentor   Usuario? @relation(name: "Mentor", fields: [mentorId], references: [id], onDelete: Cascade)
+
+  mentorado Usuario? @relation(name: "Mentor")
+}
