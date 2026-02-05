@@ -1,0 +1,72 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["prismaSchemaFolder"]
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model categoria {
+  id_categoria Int     @id @default(autoincrement())
+  nome         String  @db.VarChar(100)
+  descricao    String? @db.Text
+  joia         joia[]
+}
+
+model cliente {
+  id_cliente Int     @id @default(autoincrement())
+  nome       String  @db.VarChar(150)
+  cpf        String? @unique(map: "cpf") @db.VarChar(14)
+  telefone   String? @db.VarChar(20)
+  email      String? @db.VarChar(100)
+  endereco   String? @db.Text
+}
+
+model fornecedor {
+  id_fornecedor Int     @id @default(autoincrement())
+  nome          String  @db.VarChar(150)
+  cnpj          String? @unique(map: "cnpj") @db.VarChar(18)
+  telefone      String? @db.VarChar(20)
+  email         String? @db.VarChar(100)
+  endereco      String? @db.Text
+  joia          joia[]
+}
+
+model imagem_joia {
+  id_imagem  Int     @id @default(autoincrement())
+  id_joia    Int?
+  url_imagem String  @db.Text
+  descricao  String? @db.Text
+  joia       joia?   @relation(fields: [id_joia], references: [id_joia], onDelete: Cascade, onUpdate: NoAction, map: "imagem_joia_ibfk_1")
+
+  @@index([id_joia], map: "id_joia")
+}
+
+model joia {
+  id_joia       Int           @id @default(autoincrement())
+  nome          String        @db.VarChar(150)
+  descricao     String?       @db.Text
+  preco         Decimal       @db.Decimal(10, 2)
+  peso          Decimal?      @db.Decimal(10, 3)
+  id_categoria  Int?
+  id_material   Int?
+  id_fornecedor Int?
+  data_cadastro DateTime?     @db.Date
+  imagem_joia   imagem_joia[]
+  categoria     categoria?    @relation(fields: [id_categoria], references: [id_categoria], onUpdate: NoAction, map: "joia_ibfk_1")
+  material      material?     @relation(fields: [id_material], references: [id_material], onUpdate: NoAction, map: "joia_ibfk_2")
+  fornecedor    fornecedor?   @relation(fields: [id_fornecedor], references: [id_fornecedor], onUpdate: NoAction, map: "joia_ibfk_3")
+
+  @@index([id_categoria], map: "idx_categoria")
+  @@index([id_fornecedor], map: "idx_fornecedor")
+  @@index([id_material], map: "idx_material")
+}
+
+model material {
+  id_material Int     @id @default(autoincrement())
+  nome        String  @db.VarChar(100)
+  descricao   String? @db.Text
+  joia        joia[]
+}
