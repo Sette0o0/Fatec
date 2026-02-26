@@ -2,6 +2,8 @@ import Assinante from "../interfaces/assinante";
 import Entrada from "../io/entrada";
 import Cliente from "../modelo/cliente";
 import Empresa from "../modelo/empresa";
+import Marketing from "../modelo/marketing";
+import Pagamento from "../modelo/pagamento";
 
 export default class CadastroCliente {
     private entrada: Entrada = new Entrada()
@@ -17,27 +19,47 @@ export default class CadastroCliente {
 
             const assinantes: Assinante[] = empresa.obterAssinantes
 
-            console.log("0 - Informar todos")  // -1
-            // for (let i = 1; i > assinantes.length; i++){
-            //     console.log(`${i} - ${assinantes[i - 1]}`)
-            // }
-            for (const assinante of assinantes){
-                console.log(`${assinantes.indexOf(assinante) + 1} - ${assinante}`)
-            }
+            console.log("0 - Informar todos")
+
+            console.log(`1 - Informar Marketing`)
+            console.log(`2 - Informar Financeiro`)
         
             let entrada = new Entrada()
             let opcao = entrada.receberNumero(`Por favor, escolha uma opção: `)
-            opcao--
         
             switch (opcao) {
-                case 1:
+                case 0:
                     empresa.adicionarCliente = cliente
+                    rodando = false
+                    break;
+                case 1:
+                    const semMarketing = assinantes.filter(a => !(a instanceof Marketing))
+                    semMarketing.forEach((assinante) => {
+                        empresa.excluirAssinante(assinante)
+                    })
+
+                    empresa.adicionarCliente = cliente
+
+                    semMarketing.forEach((assinante) => {
+                        empresa.incluirAssinante(assinante)
+                    })
+
+                    rodando = false
                     break;
                 case 2:
+                    const semFinanceiro = assinantes.filter(a => !(a instanceof Pagamento))
+
+                    semFinanceiro.forEach((assinante) => {
+                        empresa.excluirAssinante(assinante)
+                    })
+
                     empresa.adicionarCliente = cliente
-                    break;
-                case 3:
-                    empresa.adicionarCliente = cliente
+                    
+                    semFinanceiro.forEach((assinante) => {
+                        empresa.incluirAssinante(assinante)
+                    })
+
+                    rodando = false
                     break;
                 default:
                     console.log(`Operação não entendida :(`)
