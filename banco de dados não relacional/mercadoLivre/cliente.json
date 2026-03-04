@@ -1,0 +1,45 @@
+{
+    "id": 1,
+    "nome": "Rafael",
+    "sobrenome": "Araujo",
+    "endereco": "Rua tal casa tal",
+    "email": "rafaelsette12345@gmail.com",
+    "senha": "$jf8873",
+    "compras": [
+        {
+            "id": 1,
+            "idCompra": 1,
+            "produto": {
+                "idProduto": 1,
+                "nome": "Carrinho HotWheels",
+                "descricao": "Carrinho de brinquedo HotWheels",
+                "valor": 11,
+                "vendedor": {
+                    "idVendedor": 1,
+                    "nome": "Professor",
+                    "sobrenome": "vendedor",
+                    "empresa": "chapano",
+                    "email": "professorvendedor@gmail.com"
+                }
+            },
+            "quantidade": 11,
+            "valorTotal": 121
+        }
+    ],
+    "favoritos": [
+        {
+            "id": 1,
+            "idProduto": 1,
+            "nome": "Carrinho HotWheels",
+            "descricao": "Carrinho de brinquedo HotWheels",
+            "valor": 11,
+            "vendedor": {
+                "idVendedor": 1,
+                "nome": "Professor",
+                "sobrenome": "vendedor",
+                "empresa": "chapano",
+                "email": "professorvendedor@gmail.com"
+            }
+        }
+    ]
+}

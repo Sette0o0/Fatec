@@ -1,0 +1,13 @@
+{
+    "id": 1,
+    "nome": "Carrinho HotWheels",
+    "descricao": "Carrinho de brinquedo HotWheels",
+    "valor": 11,
+    "vendedor": {
+        "idVendedor": 1,
+        "nome": "Professor",
+        "sobrenome": "vendedor",
+        "empresa": "chapano",
+        "email": "professorvendedor@gmail.com"
+    }
+}
