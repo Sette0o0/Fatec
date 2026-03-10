@@ -1,17 +1,14 @@
 {
     "id": 1,
-    "nome": "Professor",
-    "sobrenome": "vendedor",
+    "nome": "Professor vendedor",
     "empresa": "chapano",
     "endereco": "Rua pei pei casa pow",
     "email": "professorvendedor@gmail.com",
     "senha": "$jrgjhh6h73",
     "produtos": [
         {
-            "id": 1,
             "idProduto": 1,
             "nome": "Carrinho HotWheels",
-            "descricao": "Carrinho de brinquedo HotWheels",
             "valor": 11
         }
     ]

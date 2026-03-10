@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "data_emprestimo": "12/12/2012",
+    "data_entrega": "13/12/2012",
+    "data_entrega_prevista": "19/12/2012",
+    "usuario": {
+        "id": 1,
+        "nome": "Rafael Sette",
+        "email": "rafaelsette@gmail.com",
+        "telefone": "+5512988122324"
+    },
+    "livro": {
+        "id": 1,
+        "nome": "Código sujo",
+        "categoria": "horror",
+        "autor": {
+            "id": 1,
+            "nome": "Professor autor"
+        }
+    }
+}
