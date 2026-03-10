@@ -4,7 +4,7 @@
     "descricao": "Carrinho de brinquedo HotWheels",
     "valor": 11,
     "vendedor": {
-        "idVendedor": 1,
+        "id": 1,
         "empresa": "chapano"
     }
 }
