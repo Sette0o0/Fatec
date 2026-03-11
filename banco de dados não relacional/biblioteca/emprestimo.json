@@ -5,14 +5,12 @@
     "data_entrega_prevista": "19/12/2012",
     "usuario": {
         "id": 1,
-        "nome": "Rafael Sette",
-        "email": "rafaelsette@gmail.com",
-        "telefone": "+5512988122324"
+        "nome": "Rafael Sette"
     },
     "livro": {
         "id": 1,
         "nome": "Código sujo",
-        "categoria": "horror",
+        "categoria": ["horror"],
         "autor": {
             "id": 1,
             "nome": "Professor autor"

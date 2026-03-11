@@ -1,17 +1,17 @@
 {
     "id": 1,
     "cliente": {
-        "idCliente": 1,
+        "id": 1,
         "nome": "Rafael Sette de Araujo",
         "endereco": "Rua tal casa tal",
         "email": "rafaelsette12345@gmail.com"
     },
     "produto": {
-        "idProduto": 1,
+        "id": 1,
         "nome": "Carrinho HotWheels",
         "valor": 11,
         "vendedor": {
-            "idVendedor": 1,
+            "id": 1,
             "empresa": "chapano"
         }
     },

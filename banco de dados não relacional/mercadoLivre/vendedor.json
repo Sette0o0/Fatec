@@ -7,7 +7,7 @@
     "senha": "$jrgjhh6h73",
     "produtos": [
         {
-            "idProduto": 1,
+            "id": 1,
             "nome": "Carrinho HotWheels",
             "valor": 11
         }

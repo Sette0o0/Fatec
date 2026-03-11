@@ -6,26 +6,26 @@
     "senha": "$jf8873",
     "compras": [
         {
-            "idCompra": 1,
+            "id": 1,
             "produto": {
-                "idProduto": 1,
+                "id": 1,
                 "nome": "Carrinho HotWheels",
                 "valor": 11,
                 "vendedor": {
-                    "idVendedor": 1,
+                    "id": 1,
                     "empresa": "chapano"
                 }
             },
-            "quantidade": 11,
-            "valorTotal": 121
+            "valorTotal": 121,
+            "dataCompra": "12/12/2012"
         }
     ],
     "favoritos": [
         {
-            "idProduto": 1,
+            "id": 1,
             "nome": "Carrinho HotWheels",
             "vendedor": {
-                "idVendedor": 1,
+                "id": 1,
                 "empresa": "chapano"
             }
         }

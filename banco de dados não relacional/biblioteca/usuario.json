@@ -2,5 +2,21 @@
     "id": 1,
     "nome": "Rafael Sette",
     "email": "rafaelsette@gmail.com",
-    "telefone": "+5512988122324"
+    "telefone": "+5512988122324",
+    "endereco": "rua da minha casa, 77",
+    "emprestimo": [
+        {
+            "id": 1,
+            "data_emprestimo": "12/12/2012",
+            "livro": {
+                "id": 1,
+                "nome": "Código sujo",
+                "categoria": ["horror"],
+                "autor": {
+                    "id": 1,
+                    "nome": "Professor autor"
+                }
+            }
+        }
+    ]
 }

@@ -2,7 +2,7 @@
     "id": 1,
     "nome": "Código sujo",
     "sinopse": "Como fazer um código muito bom",
-    "categoria": "horror",
+    "categoria": ["horror"],
     "autor": {
         "id": 1,
         "nome": "Professor autor"
