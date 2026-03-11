@@ -1,5 +1,6 @@
 package com.fatec.banco.controle.correntista;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +13,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fatec.banco.modelo.CorrentistaModelo;
+import com.fatec.banco.modelo.dto.CorrentistaDto;
 import com.fatec.banco.servico.CriadorCorrentistaServico;
 import com.fatec.banco.servico.ExcluidorCorrentistaServico;
 import com.fatec.banco.servico.ListadorCorrentistaServico;
+
+import jakarta.validation.Valid;
 
 @RestController
 public class CorrentistaControle {
@@ -29,15 +33,29 @@ public class CorrentistaControle {
     private ListadorCorrentistaServico servicoListador;
 
     @PostMapping("/criar")
-    public ResponseEntity<String> criar(@RequestBody CorrentistaModelo correntistaModelo){
-        servicoCriador.criar(correntistaModelo);
+    public ResponseEntity<String> criar(@RequestBody @Valid CorrentistaDto correntistaDto){
+
+        CorrentistaModelo correntista = new CorrentistaModelo();
+        correntista.setNome(correntistaDto.getNome());
+
+        
+        servicoCriador.criar(correntista);
 
         return new ResponseEntity<>("Correntista criado com sucesso!", HttpStatus.CREATED);
     }
 
     @PostMapping("/criar/correntistas")
-    public void criarTodos(@RequestBody List<CorrentistaModelo> correntistasModelo){
-        servicoCriador.salvarTodos(correntistasModelo);
+    public void criarTodos(@RequestBody List<CorrentistaDto> correntistasDto){
+        
+        List<CorrentistaModelo> correntistas = new ArrayList<>();
+
+        for (CorrentistaDto correntistaD : correntistasDto){
+            CorrentistaModelo correntistaM = new CorrentistaModelo();
+            correntistaM.setNome(correntistaD.getNome());
+            correntistas.add(correntistaM);
+        }
+
+        servicoCriador.salvarTodos(correntistas);
     }
 
     @DeleteMapping("/apagar")
