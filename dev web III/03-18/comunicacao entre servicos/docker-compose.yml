@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  gepeto:
+    build: ./gepeto
+    ports:
+      - "8080:8080"
+
+  moura:
+    build: ./moura
+    ports:
+      - "8081:8080"

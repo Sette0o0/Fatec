@@ -1,11 +1,11 @@
-C:\Users\rafas\OneDrive\Documents\GitHub\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\CadernetaApplication.java
-C:\Users\rafas\OneDrive\Documents\GitHub\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\controle\EventoControle.java
-C:\Users\rafas\OneDrive\Documents\GitHub\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\excecao\ManipuladorGlobal.java
-C:\Users\rafas\OneDrive\Documents\GitHub\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\excecao\personalizado\CadastroDuplicadoException.java
-C:\Users\rafas\OneDrive\Documents\GitHub\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\modelo\dto\CalendarioDTO.java
-C:\Users\rafas\OneDrive\Documents\GitHub\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\modelo\dto\ErroRespostaDTO.java
-C:\Users\rafas\OneDrive\Documents\GitHub\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\modelo\dto\EventoDTO.java
-C:\Users\rafas\OneDrive\Documents\GitHub\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\modelo\entidade\Evento.java
-C:\Users\rafas\OneDrive\Documents\GitHub\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\repositorio\EventoRepositorio.java
-C:\Users\rafas\OneDrive\Documents\GitHub\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\servico\CalendarioServico.java
-C:\Users\rafas\OneDrive\Documents\GitHub\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\servico\EventoServico.java
+C:\Users\rafas\Documents\Meus Projetos\git\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\CadernetaApplication.java
+C:\Users\rafas\Documents\Meus Projetos\git\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\controle\EventoControle.java
+C:\Users\rafas\Documents\Meus Projetos\git\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\excecao\ManipuladorGlobal.java
+C:\Users\rafas\Documents\Meus Projetos\git\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\excecao\personalizado\CadastroDuplicadoException.java
+C:\Users\rafas\Documents\Meus Projetos\git\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\modelo\dto\CalendarioDTO.java
+C:\Users\rafas\Documents\Meus Projetos\git\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\modelo\dto\ErroRespostaDTO.java
+C:\Users\rafas\Documents\Meus Projetos\git\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\modelo\dto\EventoDTO.java
+C:\Users\rafas\Documents\Meus Projetos\git\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\modelo\entidade\Evento.java
+C:\Users\rafas\Documents\Meus Projetos\git\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\repositorio\EventoRepositorio.java
+C:\Users\rafas\Documents\Meus Projetos\git\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\servico\CalendarioServico.java
+C:\Users\rafas\Documents\Meus Projetos\git\Fatec\dev web III\03-11\spring-validation-355\src\main\java\com\fatec\caderneta\servico\EventoServico.java
