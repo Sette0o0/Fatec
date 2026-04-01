@@ -1,18 +1,8 @@
-from pymongo.mongo_client import MongoClient
-from pymongo.server_api import ServerApi
-
 from usuario.crud import *
-
-uri = "mongodb+srv://sette:rQt12bAk75tRCFX5@settedb.hpu8xln.mongodb.net/?appName=SetteDB&retryWrites=true&w=majority"
-
-# Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'))
-global db
-db = client.mercado_libre_sette
 
 key = 0
 sub = 0
-while (key != 'S' or key != 's'):
+while (str(key).upper() != 'S'):
     print("1-CRUD Usuário")
     print("2-CRUD Vendedor")
     print("3-CRUD Produto")
@@ -27,21 +17,21 @@ while (key != 'S' or key != 's'):
         sub = input("Digite a opção desejada? (V para voltar) ")
         if (sub == '1'):
             print("Create usuario")
-            create_usuario(db)
+            create_usuario()
             
         elif (sub == '2'):
             nome = input("Read usuário, deseja algum nome especifico? ")
-            read_usuario(db, nome)
+            read_usuario(nome)
         
         elif (sub == '3'):
             nome = input("Update usuário, deseja algum nome especifico? ")
-            update_usuario(db, nome)
+            update_usuario(nome)
 
         elif (sub == '4'):
             print("delete usuario")
             nome = input("Nome a ser deletado: ")
             sobrenome = input("Sobrenome a ser deletado: ")
-            delete_usuario(db, nome, sobrenome)
+            delete_usuario(nome, sobrenome)
             
     elif (key == '2'):
         print("Menu do Vendedor")        

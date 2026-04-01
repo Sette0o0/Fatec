@@ -3,7 +3,6 @@
     "cliente": {
         "id": 1,
         "nome": "Rafael Sette de Araujo",
-        "endereco": "Rua tal casa tal",
         "email": "rafaelsette12345@gmail.com"
     },
     "produto": {

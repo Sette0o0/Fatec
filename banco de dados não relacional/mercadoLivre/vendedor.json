@@ -2,7 +2,14 @@
     "id": 1,
     "nome": "Professor vendedor",
     "empresa": "chapano",
-    "endereco": "Rua pei pei casa pow",
+    "endereco": {
+        "cep": "987654321",
+        "estado": "SP",
+        "cidade": "São José dos Campos",
+        "bairro": "Vista Vermelha",
+        "rua": "tal",
+        "numero": 321
+    },
     "email": "professorvendedor@gmail.com",
     "senha": "$jrgjhh6h73",
     "produtos": [
