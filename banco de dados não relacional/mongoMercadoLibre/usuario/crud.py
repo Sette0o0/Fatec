@@ -28,39 +28,36 @@ def create_usuario():
 
     x = mycol.insert_one(mydoc)
 
-    print("Documento inserido com ID ",x.inserted_id)
+    print("Documento inserido com ID: ", x.inserted_id)
 
-def read_usuario(nome):
+def read_usuario(email):
     #Read
     mycol = db.usuario
     print("Usuários existentes: ")
-    if not len(nome):
-        mydoc = mycol.find().sort("nome")
+    if not len(email):
+        mydoc = mycol.find().sort("email")
         for x in mydoc:
-            print(x["nome"], ", ", x["email"])
+            print(x["nome"] + ",", x["email"])
     else:
-        myquery = {"nome": nome}
+        myquery = {"email": email}
         mydoc = mycol.find(myquery)
         for x in mydoc:
-            print(x)
+            print(x["nome"] + ",", x["email"])
 
-def update_usuario(nome):
+def update_usuario(email):
     #Read
     mycol = db.usuario
-    myquery = {"nome": nome}
+    myquery = {"email": email}
     mydoc = mycol.find_one(myquery)
     print("Dados do usuário: ",mydoc)
     nome = input("Mudar Nome:")
     if len(nome):
         mydoc["nome"] = nome
 
-    sobrenome = input("Mudar Sobrenome:")
-    if len(sobrenome):
-        mydoc["sobrenome"] = sobrenome
+    email = input("Mudar email:")
+    if len(email):
+        mydoc["email"] = email
 
-    cpf = input("Mudar CPF:")
-    if len(cpf):
-        mydoc["cpf"] = cpf
 
     newvalues = { "$set": mydoc }
     mycol.update_one(myquery, newvalues)

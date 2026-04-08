@@ -6,7 +6,8 @@ while (str(key).upper() != 'S'):
     print("1-CRUD Usuário")
     print("2-CRUD Vendedor")
     print("3-CRUD Produto")
-    key = input("Digite a opção desejada? (S para sair) ")
+    print("4-CRUD Compras")
+    key = input("Digite a opção desejada? (S para sair)\n")
 
     if (key == '1'):
         print("Menu do Usuário")
@@ -20,7 +21,7 @@ while (str(key).upper() != 'S'):
             create_usuario()
             
         elif (sub == '2'):
-            nome = input("Read usuário, deseja algum nome especifico? ")
+            nome = input("Read usuário - email (opcional): ")
             read_usuario(nome)
         
         elif (sub == '3'):
@@ -33,9 +34,6 @@ while (str(key).upper() != 'S'):
             sobrenome = input("Sobrenome a ser deletado: ")
             delete_usuario(nome, sobrenome)
             
-    elif (key == '2'):
-        print("Menu do Vendedor")        
-    elif (key == '3'):
-        print("Menu do Produto")        
+        
 
 print("Tchau Prof...")
