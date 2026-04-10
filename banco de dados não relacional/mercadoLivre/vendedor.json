@@ -2,14 +2,7 @@
     "id": 1,
     "nome": "Professor vendedor",
     "empresa": "chapano",
-    "endereco": {
-        "cep": "987654321",
-        "estado": "SP",
-        "cidade": "São José dos Campos",
-        "bairro": "Vista Vermelha",
-        "rua": "tal",
-        "numero": 321
-    },
+    "endereco": "endereço chapando",
     "email": "professorvendedor@gmail.com",
     "senha": "$jrgjhh6h73",
     "produtos": [

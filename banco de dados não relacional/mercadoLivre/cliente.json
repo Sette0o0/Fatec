@@ -1,14 +1,7 @@
 {
     "id": 1,
     "nome": "Rafael Sette de Araujo",
-    "endereco": {
-        "cep": "123456789",
-        "estado": "SP",
-        "cidade": "São José dos Campos",
-        "bairro": "Vista Verde",
-        "rua": "tal",
-        "numero": 123
-    },
+    "endereco": "casa 23",
     "email": "rafaelsette12345@gmail.com",
     "senha": "$jf8873",
     "compras": [
